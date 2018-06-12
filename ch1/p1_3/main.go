@@ -1,4 +1,5 @@
-package ch1
+//练习 1.3： 做实验测量潜在低效的版本和使用了strings.Join的版本的运行时间差异。
+package main
 
 import (
 	"fmt"
@@ -6,6 +7,12 @@ import (
 	"strings"
 	"time"
 )
+
+func main() {
+	Echo1()
+	Echo2()
+	Echo3()
+}
 
 func Echo1() {
 	start := time.Now()
@@ -15,7 +22,6 @@ func Echo1() {
 	for i := 0; i < len(os.Args); i++ {
 		s += sep + os.Args[i]
 		sep = ","
-		//fmt.Println(i, " "+os.Args[i])
 	}
 	fmt.Println("echo1: " + s)
 
@@ -32,7 +38,6 @@ func Echo2() {
 	for _, arg := range os.Args[:] {
 		s += sep + arg
 		sep = ","
-		//fmt.Println(i, " "+arg)
 	}
 	fmt.Println("echo2: ", s)
 
