@@ -1,0 +1,13 @@
+{
+	"comment": "",
+	"ignore": "",
+	"package": [
+		{
+			"checksumSHA1": "YNj1rGajQr5NMRBh90i+sEo0JI0=",
+			"path": "github.com/imroc/biu",
+			"revision": "0376ce6761c0799ec103d06c85b98e5eb43b017f",
+			"revisionTime": "2017-03-29T14:15:42Z"
+		}
+	],
+	"rootPath": "github.com/samzhou1221/studygo"
+}
